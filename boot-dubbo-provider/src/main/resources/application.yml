@@ -1,0 +1,19 @@
+# server config
+server:
+  port: 8080
+  servlet:
+    context-path: /provider
+# log config
+logging:
+  level:
+    com: debug
+  file:
+    path: /log.log
+dubbo:
+  application:
+    name: boot-dubbo-provider
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20880
